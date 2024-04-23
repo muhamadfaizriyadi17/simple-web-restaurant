@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link for fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Restaurant Catalog</title>
+  <style>
+    /* Your CSS styles go here */
+  </style>
+</head>
+<body>
+  <a href="#maincontent" class="skip-link">Skip to Content</a>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="nav-logo">Hunger Apps.</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Favorite</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+          <form action="#" class="search-form">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <button type="submit" class="search-btn"><i class="fas fa-search search-icon"></i></button>
+          </form>
+        </li>
+      </ul>
+      <div class="hamburger" tabindex="0">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <section class="jumbotron">
+        <!-- Content for Jumbotron -->
+        <div class="jumbotron" alt="Restaurant Hero Image">
+          <div class="jumbotron__inner">
+            <h1 class="jumbotron__title">Temukan Hidangan Lezat di Restoran Terbaik</h1>
+            <p class="jumbotron__tagline">
+              Jelajahi berbagai pilihan hidangan dari restoran terbaik di seluruh kota yang ada di Indonesia, nikmati rasa yang menggugah selera!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="headline">
+        <!-- Content for Headline -->
+        <article>
+          <h2>Hunger Apps</h2>
+          <p>Selamat datang di Hunger Apps, aplikasi yang mengantarkan Anda pada petualangan kuliner tak terlupakan. Dengan akses ke berbagai macam restoran dan hidangan dari seluruh penjuru kota di Indonesia, Hunger Apps hadir untuk memenuhi setiap keinginan dan kebutuhan rasa Anda. Nikmati kemudahan dalam menemukan restoran terdekat, melihat menu, membaca ulasan pelanggan, dan melakukan pemesanan dengan mudah melalui satu aplikasi yang praktis. Ayo mulai petualangan kuliner Anda sekarang dengan Hunger Apps!.</p>
+          <button class="read-more">Read More</button>
+        </article>
+        
+        <aside>
+          <figure>
+            <img src="images/heros/hero-image_1.jpg" alt="Gambar Koki Restaurant">
+            <figcaption>Hunger Apps April 2024 Information, lebih dari 100k orang telah menggunakan Hunger Apps</figcaption>
+          </figure>
+        </aside>
+      </section>   
+
+      <section class="article" id="maincontent">
+        <h2>Restaurant List</h2>
+        <div class="restaurant-list">
+          <article class="restaurant-item">
+            <img class="restaurant-item__thumbnail" src="https://restaurant-api.dicoding.dev/images/medium/41" alt="Bring Your Phone Cafe">
+            <div class="restaurant-item__content">
+              <h1 class="restaurant-item__title">Bring Your Phone Cafe</h1>
+              <p class="restaurant-item__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+              </p>
+              <div class="restaurant-item__info">
+                <p><i class="fas fa-map-marker-alt"></i>  Medan</p>
+                <p><i class="fas fa-star"></i>  4.6</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="restaurant-item">
+            <img class="restaurant-item__thumbnail" src="https://restaurant-api.dicoding.dev/images/medium/07" alt="Run The Gun">
+            <div class="restaurant-item__content">
+              <h1 class="restaurant-item__title">Run The Gun</h1>
+              <p class="restaurant-item__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+              </p>
+              <div class="restaurant-item__info">
+                <p><i class="fas fa-map-marker-alt"></i>  Bali</p>
+                <p><i class="fas fa-star"></i>  4.6</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="restaurant-item">
+            <img class="restaurant-item__thumbnail" src="https://restaurant-api.dicoding.dev/images/medium/29" alt="Pangsit Express">
+            <div class="restaurant-item__content">
+              <h1 class="restaurant-item__title">Pangsit Express</h1>
+              <p class="restaurant-item__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+              </p>
+              <div class="restaurant-item__info">
+                <p><i class="fas fa-map-marker-alt"></i>  Ternate</p>
+                <p><i class="fas fa-star"></i>  4.8</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="restaurant-item">
+            <img class="restaurant-item__thumbnail" src="https://restaurant-api.dicoding.dev/images/medium/38" alt="Ducky Duck">
+            <div class="restaurant-item__content">
+              <h1 class="restaurant-item__title">Ducky Duck</h1>
+              <p class="restaurant-item__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+              </p>
+              <div class="restaurant-item__info">
+                <p><i class="fas fa-map-marker-alt"></i>  Malang</p>
+                <p><i class="fas fa-star"></i>  4.7</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="restaurant-item">
+            <img class="restaurant-item__thumbnail" src="https://restaurant-api.dicoding.dev/images/medium/40" alt="Kafein">
+            <div class="restaurant-item__content">
+              <h1 class="restaurant-item__title">Kafein</h1>
+              <p class="restaurant-item__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+              </p>
+              <div class="restaurant-item__info">
+                <p><i class="fas fa-map-marker-alt"></i>  Bali</p>
+                <p><i class="fas fa-star"></i>  3.8</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="restaurant-item">
+            <img class="restaurant-item__thumbnail" src="https://restaurant-api.dicoding.dev/images/medium/08" alt="Makan mudah">
+            <div class="restaurant-item__content">
+              <h1 class="restaurant-item__title">Makan mudah</h1>
+              <p class="restaurant-item__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+              </p>
+              <div class="restaurant-item__info">
+                <p><i class="fas fa-map-marker-alt"></i>  Malang</p>
+                <p><i class="fas fa-star"></i>  4.6</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="restaurant-item">
+            <img class="restaurant-item__thumbnail" src="https://restaurant-api.dicoding.dev/images/medium/32" alt="Saya Suka">
+            <div class="restaurant-item__content">
+              <h1 class="restaurant-item__title">Saya Suka</h1>
+              <p class="restaurant-item__description">
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+              </p>
+              <div class="restaurant-item__info">
+                <p><i class="fas fa-map-marker-alt"></i>  Bali</p>
+                <p><i class="fas fa-star"></i>  3.6</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="restaurant-item">
+            <img class="restaurant-item__thumbnail" src="https://restaurant-api.dicoding.dev/images/medium/45" alt="Gigitan Cepat">
+            <div class="restaurant-item__content">
+              <h1 class="restaurant-item__title">Gigitan Cepat</h1>
+              <p class="restaurant-item__description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+              </p>
+              <div class="restaurant-item__info">
+                <p><i class="fas fa-map-marker-alt"></i>  Aceh</p>
+                <p><i class="fas fa-star"></i>  4.0</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="restaurant-item">
+            <img class="restaurant-item__thumbnail" src="https://restaurant-api.dicoding.dev/images/medium/08" alt="Fairy Cafe">
+            <div class="restaurant-item__content">
+              <h1 class="restaurant-item__title">Fairy Cafe</h1>
+              <p class="restaurant-item__description">
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+              </p>
+              <div class="restaurant-item__info">
+                <p><i class="fas fa-map-marker-alt"></i>  Malang</p>
+                <p><i class="fas fa-star"></i>  3.9</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-us" id="about">
+        <h2>About Us</h2>
+        <p>Selamat datang di Hunger Apps, destinasi utama Anda untuk menjelajahi beragam restoran! Baik Anda menginginkan hidangan lezat atau mencari tempat makan tersembunyi dalam dunia kuliner, kami siap membantu Anda. Platform kami menghadirkan berbagai pilihan tempat makan, memastikan Anda tidak kehabisan pilihan. Mulai dari kafe yang nyaman hingga restoran mewah, temukan tempat yang sempurna untuk memuaskan hasrat kuliner Anda dan menjalani petualangan kuliner yang tak terlupakan. Ayo bergabunglah bersama kami saatnya merayakan keberagaman cita rasa masakan lezat dan Bergizi!.</p>
+        <ul class="social-icons">
+          <li><a href="https://www.linkedin.com/in/muhamad-faiz-riyadi-9aa111225/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/muhammadfaizriyadi17/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://github.com/muhamadfaizriyadi17" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="faizcode.my.id" target="_blank"><i class="fas fa-globe"></i></a></li>
+        </ul>
+      </section>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Hunger Apps. All rights reserved Muhamad Faiz Riyadi.</p>
+  </footer>
+
+  <script type="module" src="../scripts/index.js"></script>
+</body>
+</html>
