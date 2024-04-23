@@ -43,9 +43,11 @@ a {
 }
 
 .nav-link {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
   color: #424d5d;
+  padding: 10px 10px;
+  min-height: 44px;
 }
 
 .nav-link:hover {
@@ -56,7 +58,11 @@ a {
   font-size: 2.3rem;
   font-weight: bold;
   color: #482ff7;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 10px;
 }
+
 
 /* Search bar styles */
 .search-bar {
@@ -67,6 +73,8 @@ a {
   width: 250px;
   transition: border-color 0.2s;
   outline: none;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .search-bar:focus {
@@ -78,19 +86,26 @@ a {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 5px;
 }
 
 .search-icon {
-  font-size: 14px;
-  margin-left: 13px;
+  font-size: 20px;
+  margin-left: 15px;
   background-color: #6851fd;
   color: white;
   border-radius: 50%;
-  padding: 7px;
+  padding: 9px;
+  margin: 5px;
 }
 
 /* Hamburger menu styles */
 .hamburger {
+  display: inline-block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
   display: none;
 }
 
@@ -99,9 +114,18 @@ a {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+/* Efek hover untuk garis hamburger */
+.hamburger:hover .bar {
+  background-color: #555;
+}
+
+/* Efek focus untuk garis hamburger */
+.hamburger:focus .bar {
+  background-color: #555;
 }
 
 /* CSS untuk menyembunyikan tautan "Skip to Content" secara visual */
@@ -115,6 +139,8 @@ a {
   z-index: 100;
   opacity: 0;
   transition: opacity 0.3s;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .skip-link:focus {
@@ -211,7 +237,7 @@ a {
   display: inline-block;
   background-color: #482ff7; 
   color: white; 
-  padding: 10px 20px; 
+  padding: 15px 20px; 
   text-align: center;
   text-decoration: none;
   font-size: 1.4rem; 
@@ -328,7 +354,7 @@ a {
 }
 
 .about-us p {
-  font-size: 1.6rem; /* Ukuran font untuk elemen h2 */
+  font-size: 1.6rem;
   text-align: justify;
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -339,15 +365,19 @@ a {
   padding: 0;
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .social-icons li {
-  margin: 0 10px;
+  margin: 15px;
 }
 
 .social-icons a {
   color: #333;
-  font-size: 24px;
+  font-size: 38px;
+  padding: 5px;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .footer {
@@ -359,7 +389,7 @@ a {
 }
 
 /* Responsive navigation styles */
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1125px) {
   .nav-menu {
       position: fixed;
       left: -100%;
@@ -553,12 +583,12 @@ a {
   }
 
   .headline p {
-    font-size: 1.4rem; /* Ukujran font untuk elemen paragraf */
+    font-size: 1.4rem;
     text-align: justify;
   }
 
   .headline h2 {
-    font-size: 2rem; /* Ukuran font untuk elemen h2 */
+    font-size: 2rem;
     margin-bottom: 2rem;
     margin-top: 4rem;
     text-align: center;
@@ -576,5 +606,11 @@ a {
     border-radius: 5px; 
     border: none; 
     cursor: pointer; 
+  }
+
+  .footer p {
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
   }
 }
