@@ -30,7 +30,13 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 
 .nav-menu {
   display: flex;
@@ -44,7 +50,7 @@ a {
 
 .nav-link {
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #424d5d;
   padding: 10px 10px;
   min-height: 44px;
@@ -55,7 +61,7 @@ a {
 }
 
 .nav-logo {
-  font-size: 2.3rem;
+  font-size: 27px;
   font-weight: bold;
   color: #482ff7;
   min-width: 44px;
@@ -150,6 +156,7 @@ a {
 
 .content {
   padding: 43px;
+  margin-top: 70px;
 }
 
 .jumbotron {
@@ -177,13 +184,13 @@ a {
 .jumbotron__title {
   color: #fff;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 44px;
 }
 
 .jumbotron__tagline {
   color: #fff;
   margin-top: 16px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 300;
 }
 
@@ -199,14 +206,13 @@ a {
 }
 
 .headline h2 {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   margin-bottom: 1rem;
   color: #482ff7;
 }
 
 .headline p {
   font-size: 1.3rem;
-  text-align: justify;
 
 }
 
@@ -240,7 +246,7 @@ a {
   padding: 15px 20px; 
   text-align: center;
   text-decoration: none;
-  font-size: 1.6rem; 
+  font-size: 1.4rem; 
   margin-top: 3rem; 
   border-radius: 5px; 
   border: none; 
@@ -253,7 +259,7 @@ a {
 
 .restaurant-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
@@ -262,9 +268,9 @@ a {
 }
 
 .article h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #482ff7;
-  margin-bottom: 2rem;
+  margin-bottom: 2.8rem;
   text-align: center;
 }
 
@@ -280,10 +286,11 @@ a {
 
 .restaurant-item__thumbnail {
   width: 100%;
+  height: 40%;
 }
 
 .restaurant-item__title {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   margin-top: 16px;
   transition: 0.3s opacity;
@@ -300,7 +307,7 @@ a {
 
 .restaurant-item__description {
   margin-top: 16px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5em;
 }
 
@@ -323,14 +330,11 @@ a {
 }
 
 .restaurant-item__info p {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .restaurant-item__info p i {
   margin-right: 5px;
-}
-
-.restaurant-item__info p i {
   color: grey;
 }
 
@@ -349,13 +353,13 @@ a {
 
 .about-us h2 {
   color: #482ff7;
-  font-size: 2.2rem; 
+  font-size: 2.4rem; 
   text-align: center;
 }
 
 .about-us p {
   font-size: 1.6rem;
-  text-align: justify;
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
@@ -386,231 +390,4 @@ a {
   text-align: center;
   font-size: medium;
   padding: 20px 0;
-}
-
-/* Responsive navigation styles */
-@media only screen and (max-width: 1125px) {
-  .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 5rem;
-      flex-direction: column;
-      background-color: #fff;
-      width: 100%;
-      border-radius: 10px;
-      text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-
-  .nav-menu.active {
-      left: 0;
-  }
-
-  .search-bar,
-  .search-icon {
-      display: none;
-  }
-
-  .nav-item {
-      margin: 2.5rem 0;
-  }
-
-  .hamburger {
-      display: block;
-      cursor: pointer;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .jumbotron {
-    min-width: 1000px; 
-    width: 100%;
-  }
-  
-  .headline article {
-    flex: 1;
-    margin-right: 40px; 
-  }
-  
-  .headline h2 {
-    font-size: 2.6rem; 
-    margin-bottom: 3rem;
-  }
-  
-  .headline p {
-    font-size: 1.8rem; 
-    text-align: justify;
-    margin-right: 30px;
-  }
-
-  .read-more {
-    display: inline-block;
-    background-color: #482ff7; 
-    color: white; 
-    padding: 15px 20px; 
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.6rem; 
-    margin-top: 3rem; 
-    border-radius: 5px; 
-    border: none; 
-    cursor: pointer; 
-  }
-
-  .headline figure figcaption {
-    font-size: 1.2rem;
-    text-align: center;
-    color: #40454d;
-  }
-
-  .article {
-    max-width: 1200px;
-    margin: auto;
-    padding-top: 7rem;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  .headline article {
-    flex: 1;
-    margin-right: 25px; 
-  }
-  
-  .headline h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-  
-  .headline p {
-    font-size: 1.2rem;
-    text-align: justify;
-  
-  }
-
-  .read-more {
-    display: inline-block;
-    background-color: #482ff7; 
-    color: white; 
-    padding: 15px 20px; 
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.6rem; 
-    margin-top: 1.5rem; 
-    border-radius: 5px; 
-    border: none; 
-    cursor: pointer; 
-  }
-
-  .headline figure figcaption {
-    font-size: 0.8rem;
-    text-align: center;
-    color: #40454d;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .headline article {
-    flex: 1;
-    margin-right: 25px; 
-  }
-  
-  .headline h2 {
-    font-size: 1.6rem;
-    margin-bottom: 0.7rem;
-  }
-  
-  .headline p {
-    font-size: 1rem;
-    text-align: justify;
-  
-  }
-
-  .read-more {
-    display: inline-block;
-    background-color: #482ff7; 
-    color: white; 
-    padding: 14px 20px; 
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2rem; 
-    margin-top: 1.3rem; 
-    border-radius: 5px; 
-    border: none; 
-    cursor: pointer; 
-  }
-
-  .headline figure figcaption {
-    font-size: 0.7rem;
-    text-align: center;
-    color: #40454d;
-  }
-}
-
-@media only screen and (max-width: 660px) {
-  .headline {
-    flex-direction: column; 
-    align-items: stretch; 
-  }
-
-  .headline article,
-  .headline aside {
-    flex: none; 
-    width: 100%; 
-    margin-right: 0;
-  }
-
-  .headline aside {
-    order: -1;
-  }
-  
-  .headline figure figcaption {
-    font-size: 1.1rem;
-    text-align: center;
-    color: #40454d;
-  }
-
-  .headline p {
-    font-size: 1.4rem;
-    text-align: justify;
-  }
-
-  .headline h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 4rem;
-    text-align: center;
-  }
-
-  .read-more {
-    display: inline-block;
-    background-color: #482ff7; 
-    color: white; 
-    padding: 15px 20px; 
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.4rem; 
-    margin-top: 3rem; 
-    border-radius: 5px; 
-    border: none; 
-    cursor: pointer; 
-  }
-
-  .footer p {
-    padding-right: 15px;
-    padding-left: 15px;
-    text-align: center;
-  }
 }
