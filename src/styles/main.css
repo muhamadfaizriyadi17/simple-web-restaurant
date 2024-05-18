@@ -124,17 +124,14 @@ a {
   transition: background-color 0.3s ease;
 }
 
-/* Efek hover untuk garis hamburger */
 .hamburger:hover .bar {
   background-color: #555;
 }
 
-/* Efek focus untuk garis hamburger */
 .hamburger:focus .bar {
   background-color: #555;
 }
 
-/* CSS untuk menyembunyikan tautan "Skip to Content" secara visual */
 .skip-link {
   position: absolute;
   top: -40px;
@@ -158,6 +155,17 @@ a {
   padding: 43px;
   margin-top: 70px;
 }
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(224, 180, 253);
+  border-right-color: #482ff7;
+  animation: l2 1s infinite linear;
+  display: none;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
 
 .jumbotron {
   display: flex;
