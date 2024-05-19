@@ -1,6 +1,6 @@
 class AboutItem extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <section class="about-us" id="about">
             <h2>About Us</h2>
             <p>Selamat datang di Hunger Apps, destinasi utama Anda untuk menjelajahi beragam restoran! Baik Anda menginginkan hidangan lezat atau mencari tempat makan tersembunyi dalam dunia kuliner, kami siap membantu Anda. Platform kami menghadirkan berbagai pilihan tempat makan, memastikan Anda tidak kehabisan pilihan. Mulai dari kafe yang nyaman hingga restoran mewah, temukan tempat yang sempurna untuk memuaskan hasrat kuliner Anda dan menjalani petualangan kuliner yang tak terlupakan. Ayo bergabunglah bersama kami saatnya merayakan keberagaman cita rasa masakan lezat dan Bergizi!.</p>
@@ -12,7 +12,7 @@ class AboutItem extends HTMLElement {
             </ul>
         </section>
       `;
-    }
   }
+}
 
-  customElements.define('about-item', AboutItem);
+customElements.define('about-item', AboutItem);

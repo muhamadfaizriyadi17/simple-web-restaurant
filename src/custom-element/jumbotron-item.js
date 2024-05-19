@@ -1,6 +1,6 @@
 class JumbotronItem extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <!-- Content for Jumbotron -->
         <section class="jumbotron">
             <div class="jumbotron" alt="Restaurant Hero Image">
@@ -13,7 +13,7 @@ class JumbotronItem extends HTMLElement {
             </div>
         </section>
       `;
-    }
   }
+}
 
-  customElements.define('jumbotron-item', JumbotronItem);
+customElements.define('jumbotron-item', JumbotronItem);

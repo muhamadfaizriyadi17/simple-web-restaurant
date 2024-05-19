@@ -1,6 +1,6 @@
 class HeadlineItem extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <section class="headline">
             <article>
                 <h2>Hunger Apps</h2>
@@ -16,7 +16,7 @@ class HeadlineItem extends HTMLElement {
             </aside>
         </section> 
       `;
-    }
   }
+}
 
-  customElements.define('headline-item', HeadlineItem);
+customElements.define('headline-item', HeadlineItem);

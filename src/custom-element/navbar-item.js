@@ -1,6 +1,6 @@
 class NavbarItem extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <nav class="navbar">
             <a href="/" class="nav-logo">Hunger Apps.</a>
             <button class="hamburger" tabindex="0">
@@ -27,7 +27,7 @@ class NavbarItem extends HTMLElement {
             </ul>     
         </nav>
       `;
-    }
   }
+}
 
-  customElements.define('navbar-item', NavbarItem);
+customElements.define('navbar-item', NavbarItem);

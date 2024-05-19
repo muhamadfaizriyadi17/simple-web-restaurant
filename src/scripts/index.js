@@ -8,7 +8,7 @@ import '../custom-element/footer-item.js';
 import '../styles/sass/main.scss';
 // import '../styles/main.css';
 // import '../styles/responsive.css';
-import '../scripts/script.js';
+import './script.js';
 import '../public/data/DATA.json';
 
 console.log('Hello Coders! :)');
