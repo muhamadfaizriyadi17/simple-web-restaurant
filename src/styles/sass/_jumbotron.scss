@@ -1,0 +1,35 @@
+// _jumbotron.scss
+.jumbotron {
+    display: flex;
+    align-items: center;
+    min-height: 460px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-image: url('../../public/images/heros/hero-image_2.jpg');
+    background-position: center;
+    background-color: rgb(121, 121, 121);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  
+  .jumbotron__inner {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .jumbotron__title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 44px;
+  }
+  
+  .jumbotron__tagline {
+    color: #fff;
+    margin-top: 16px;
+    font-size: 22px;
+    font-weight: 300;
+  }

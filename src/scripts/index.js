@@ -5,8 +5,9 @@ import '../custom-element/headline-item.js';
 import '../custom-element/restaurant-list.js';
 import '../custom-element/about-item.js';
 import '../custom-element/footer-item.js';
-import '../styles/main.css';
-import '../styles/responsive.css';
+import '../styles/sass/main.scss';
+// import '../styles/main.css';
+// import '../styles/responsive.css';
 import '../scripts/script.js';
 import '../public/data/DATA.json';
 

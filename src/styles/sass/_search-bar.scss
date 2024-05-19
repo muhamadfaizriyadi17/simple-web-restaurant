@@ -1,0 +1,35 @@
+// _search-bar.scss
+.search-bar {
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    width: 250px;
+    transition: border-color 0.2s;
+    outline: none;
+    min-width: 44px;
+    min-height: 44px;
+  
+    &:focus {
+      border-color: $primary-color;
+      outline: 1.5px solid $secondary-color;
+    }
+  }
+  
+  .search-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .search-icon {
+    font-size: 20px;
+    margin-left: 15px;
+    background-color: $secondary-color;
+    color: white;
+    border-radius: 50%;
+    padding: 9px;
+    margin: 5px;
+  }
+  

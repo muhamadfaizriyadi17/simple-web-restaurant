@@ -1,0 +1,44 @@
+// _navbar.scss
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: $box-shadow;
+  
+    .nav-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .nav-item {
+      margin-left: 5rem;
+    }
+  
+    .nav-link {
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $text-color;
+      padding: 10px 10px;
+      min-height: 44px;
+  
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  
+    .nav-logo {
+      font-size: 27px;
+      font-weight: bold;
+      color: $primary-color;
+      min-width: 44px;
+      min-height: 44px;
+      padding: 10px 10px;
+    }
+  }
+  

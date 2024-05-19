@@ -1,0 +1,79 @@
+.headline {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  
+  .headline article {
+    flex: 1;
+    margin-right: 30px; 
+  }
+  
+  .headline h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    color: #482ff7;
+  }
+  
+  .headline p {
+    font-size: 1.3rem;
+  
+  }
+  
+  .headline aside {
+    flex: 1;
+  }
+  
+  .headline figure {
+    width: 100%;
+  }
+  
+  .headline figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+  
+  .headline figure figcaption {
+    text-align: center;
+    color: #40454d;
+  }
+  
+  .read-more {
+    display: inline-block;
+    background-color: #482ff7; 
+    color: white; 
+    padding: 15px 20px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4rem; 
+    margin-top: 3rem; 
+    border-radius: 5px; 
+    border: none; 
+    cursor: pointer; 
+  }
+  
+  .read-more:hover {
+    background-color: #543cf4; 
+  }
+  
+  .restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .article {
+    margin-top: 7rem;
+  }
+  
+  .article h2 {
+    font-size: 2.4rem;
+    color: #482ff7;
+    margin-bottom: 2.8rem;
+    text-align: center;
+  }
